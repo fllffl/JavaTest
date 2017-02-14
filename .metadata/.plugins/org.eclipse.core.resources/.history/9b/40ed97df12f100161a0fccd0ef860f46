@@ -1,0 +1,21 @@
+package happy;
+
+import java.io.*;
+
+public class IOtest {
+	
+	public void copy(InputStream in,OutputStream out) throws IOException{
+		byte[] buf = new byte[4096];
+		int len = in.read(buf);
+		while (len != -1)
+			out.write(buf,0,len);
+			
+	}
+	
+	public static void main(String [] args){
+		IOtest test = new IOtest();
+		System.out.println("ÇëÊäÈë×Ö·û£º");
+		test.copy();
+	}
+
+}

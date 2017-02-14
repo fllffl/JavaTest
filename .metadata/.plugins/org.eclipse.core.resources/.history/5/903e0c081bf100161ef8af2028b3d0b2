@@ -1,0 +1,24 @@
+package happy;
+
+import java.io.*;
+
+public class IOtest {
+	
+	public static void main(String [] args) throws IOException {
+		try{
+			File infile = new File("/BROM_DLL.log");
+			FileInputStream fis = new FileInputStream(infile);
+			int i;
+			i = fis.read();
+			System.out.println(i);
+			i = fis.read();
+			System.out.println(i);
+			fis.close();
+		}catch(FileNotFoundException e){
+			System.out.println("FileStreamsTest:" + e);
+		}catch(IOException e){
+			System.err.println("FileStreamTest:" + e);
+		}
+	}
+
+}

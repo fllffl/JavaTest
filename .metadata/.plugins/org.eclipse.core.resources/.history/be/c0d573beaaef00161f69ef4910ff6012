@@ -1,0 +1,12 @@
+package happy;
+
+import java.util.ArrayList;
+
+public class HashMapTest {
+	public static void main(String[] args) {
+		ArrayList<animal> my = new ArrayList<animal>();
+		animal dog1 = new dog();
+		dog1.beat();
+	}
+
+}

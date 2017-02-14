@@ -1,0 +1,25 @@
+package happy;
+import java.util.ArrayList;
+
+public class bilibili {
+
+	public static void main(String[] args) {
+		ArrayList<animal> my = new ArrayList<animal>();
+		dog dog1 = new dog();
+		my.add(dog1);
+	}
+
+}
+class animal{
+	public animal(){
+		System.out.println("animal");
+	}
+}
+class dog extends animal{
+	public dog(){
+		System.out.println("dog");
+	}
+	void beat(){
+		System.out.println("n");
+	}
+}

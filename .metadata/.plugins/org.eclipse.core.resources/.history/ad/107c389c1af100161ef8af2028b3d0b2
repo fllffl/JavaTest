@@ -1,0 +1,14 @@
+package happy;
+
+import java.io.*;
+
+public class IOtest {
+	
+	public static void main(String [] args) throws IOException {
+		try{
+			File infile = new File("/BROM_DLL.log");
+			
+		}
+	}
+
+}

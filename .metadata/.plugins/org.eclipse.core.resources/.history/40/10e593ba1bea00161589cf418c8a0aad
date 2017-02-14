@@ -1,0 +1,13 @@
+package happy;
+
+public class bilibili {
+
+	public static void main(String[] args) {
+		boolean ssr=false;
+		System.out.println(ssr);
+		
+		ssr=(7>4);
+		System.out.println(ssr);
+	}
+
+}

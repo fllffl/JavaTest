@@ -1,0 +1,24 @@
+package happy;
+
+import java.io.*;
+
+public class IOtest {
+	
+	public void copy(InputStream in,OutputStream out) throws IOException {
+		byte[] buf = new byte[4096];
+		int len = in.read(buf);
+		while (len != -1){
+			out.write(buf,0,len);
+			len = in.read(buf);
+		}
+			
+			
+	}
+	
+	public static void main(String [] args) throws IOException {
+		IOtest test = new IOtest();
+		System.out.println("请输入字符");
+		test.copy(System.in, System.out);
+	}
+
+}

@@ -1,0 +1,17 @@
+package happy;
+
+public class bilibili {
+
+	public static void main(String[] args) {
+		dog dog1 = new dog();
+	}
+
+}
+abstract class animal{
+	abstract void beat(){
+		System.out.println("n");
+	}
+}
+class dog extends animal{
+
+}

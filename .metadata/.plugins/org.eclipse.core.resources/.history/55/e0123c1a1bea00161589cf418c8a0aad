@@ -1,0 +1,14 @@
+package happy;
+
+public class bilibili {
+
+	public static void main(String[] args) {
+		int x=10;
+		char c;
+		c='q';
+		System.out.println(c);
+		c='!';
+		System.out.println(x);
+	}
+
+}
